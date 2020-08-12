@@ -13,10 +13,9 @@ function Footer() {
             </a>
           </li>
           <li className="menu__item">
-            <Link to="/cv">CV</Link>
-            {/* <a className="link" href="aaa" alt="link">
+            <Link to="/cv" className="link">
               CV
-            </a> */}
+            </Link>
           </li>
           <li className="menu__item">
             <a

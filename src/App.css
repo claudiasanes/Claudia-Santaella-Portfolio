@@ -1,5 +1,5 @@
 .App {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .paragraph {
@@ -23,6 +23,7 @@
   width: 100vw;
   position: fixed;
   bottom: 0px;
+  margin-top: 40px;
 }
 
 .menu {
@@ -45,4 +46,25 @@
 .link {
   font-size: 30px;
   color: black;
+}
+
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 40px 40px;
+}
+
+.return-btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  width: 250px;
+  padding: 12px 32px;
+  margin-bottom: 40px;
+}
+
+.cv-img {
+  width: 800px;
 }

@@ -16,20 +16,28 @@ function App() {
   const changeColor = (color) => setStyle({ backgroundColor: color });
   return (
     <div className="App">
-      {ps.map((paragraph, pindex) => (
-        <p key={pindex} className="paragraph">
-          {paragraph.split('').map((character, index) => (
-            <Character key={`${character}-${index}`} changeColor={changeColor}>
-              {character}
-            </Character>
+      <Route exact path="/">
+        <div>
+          {ps.map((paragraph, pindex) => (
+            <p key={pindex} className="paragraph">
+              {paragraph.split('').map((character, index) => (
+                <Character
+                  key={`${character}-${index}`}
+                  changeColor={changeColor}
+                >
+                  {character}
+                </Character>
+              ))}
+            </p>
           ))}
-        </p>
-      ))}
-      <div className="background" style={style}></div>
+          <div className="background" style={style}></div>
+        </div>
+      </Route>
       <Footer />
-      <switch>
+
+      <Switch>
         <Route path="/cv" component={Cv} />
-      </switch>
+      </Switch>
     </div>
   );
 }

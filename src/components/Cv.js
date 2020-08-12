@@ -6,6 +6,9 @@ import Curriculum from '../images/ClaudiaSantaellaCV.jpg';
 function Cv() {
   return (
     <div className="cv-container">
+      <Link to="/" className="return-btn">
+        RETURN
+      </Link>
       <img className="cv-img" src={Curriculum} alt="curriculum" />
     </div>
   );
