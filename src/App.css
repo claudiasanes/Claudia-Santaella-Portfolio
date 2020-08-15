@@ -18,7 +18,7 @@
 }
 
 .footer {
-  background-color: bisque;
+  background-color: orangered;
   height: 100px;
   width: 100vw;
   position: fixed;
@@ -49,22 +49,26 @@
 }
 
 .cv-container {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  margin: 40px 40px;
+  align-items: flex-start;
 }
 
 .return-btn {
-  display: inline-block;
   background-color: black;
   color: white;
-  width: 250px;
   padding: 12px 32px;
-  margin-bottom: 40px;
+  margin: 40px;
+  position: relative;
+  top: 20px;
+  border-radius: 50px;
 }
 
 .cv-img {
+  align-self: center;
   width: 800px;
+  margin: 40px 40px 200px;
+  box-shadow: 0 6px 16px 0px rgba(0, 0, 0, 0.205);
 }
