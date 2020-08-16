@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import '../App.css';
+import '../App.scss';
 import Character from './Character';
 import Footer from './Footer';
 import Cv from './Cv';
+import Contact from './Contact';
+import Header from './Header';
 
 const ps = [
   'Lolita, luz de mi vida, fuego de mis entrañas. Pecado mío, alma mía. Lo-li-ta: la punta de la lengua emprende un viaje de tres pasos paladar abajo hasta apoyarse, en el tercero, en el borde de los dientes. Lo. Li. Ta.',
@@ -13,9 +15,11 @@ const ps = [
 ];
 function App() {
   const [style, setStyle] = useState({});
-  const changeColor = (color) => setStyle({ backgroundColor: color });
+  // const changeColor = (color) => setStyle({ backgroundColor: color });
   return (
     <div className="App">
+      <Header />
+      <Contact />
       <Route exact path="/">
         <div>
           {ps.map((paragraph, pindex) => (
@@ -23,7 +27,7 @@ function App() {
               {paragraph.split('').map((character, index) => (
                 <Character
                   key={`${character}-${index}`}
-                  changeColor={changeColor}
+                  // changeColor={changeColor}
                 >
                   {character}
                 </Character>

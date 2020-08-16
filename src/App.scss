@@ -19,28 +19,36 @@
 
 .footer {
   background-color: orangered;
-  height: 100px;
   width: 100vw;
   position: fixed;
   bottom: 0px;
-  margin-top: 40px;
+  // padding: 40px 0px 0px;
+}
+
+.copyright {
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  &__text {
+    color: white;
+  }
 }
 
 .menu {
-  padding-top: 10px;
-}
+  &__list {
+    margin: 16px 40px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.menu__list {
-  margin: 20px 40px;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu__item {
-  display: inline-block;
+  &__item {
+    display: inline-block;
+  }
 }
 
 .link {

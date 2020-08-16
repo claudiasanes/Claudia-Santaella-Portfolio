@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import '../App.scss';
 
 function Footer() {
   return (
@@ -35,6 +35,9 @@ function Footer() {
           </li>
         </ul>
       </nav>
+      <div className="copyright">
+        <span className="copyright__text">Made by Claudiasanes. 2020</span>
+      </div>
     </div>
   );
 }
