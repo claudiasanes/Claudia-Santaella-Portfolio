@@ -15,11 +15,10 @@ const ps = [
 ];
 function App() {
   const [style, setStyle] = useState({});
-  // const changeColor = (color) => setStyle({ backgroundColor: color });
+  const changeColor = (color) => setStyle({ backgroundColor: color });
   return (
     <div className="App">
       <Header />
-      <Contact />
       <Route exact path="/">
         <div>
           {ps.map((paragraph, pindex) => (
@@ -27,7 +26,7 @@ function App() {
               {paragraph.split('').map((character, index) => (
                 <Character
                   key={`${character}-${index}`}
-                  // changeColor={changeColor}
+                  changeColor={changeColor}
                 >
                   {character}
                 </Character>
@@ -38,9 +37,9 @@ function App() {
         </div>
       </Route>
       <Footer />
-
       <Switch>
         <Route path="/cv" component={Cv} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </div>
   );

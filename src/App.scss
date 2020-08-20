@@ -22,7 +22,7 @@
   width: 100vw;
   position: fixed;
   bottom: 0px;
-  // padding: 40px 0px 0px;
+  z-index: 1;
 }
 
 .copyright {
@@ -77,6 +77,26 @@
 .cv-img {
   align-self: center;
   width: 800px;
-  margin: 40px 40px 200px;
+  margin: 40px 40px 140px;
   box-shadow: 0 6px 16px 0px rgba(0, 0, 0, 0.205);
+}
+
+.contact {
+  &__container {
+    background-color: grey;
+    border: 1px solid red;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__item {
+    }
+  }
 }

@@ -29,9 +29,9 @@ function Footer() {
             </a>
           </li>
           <li className="menu__item">
-            <a className="link" href="aaa" alt="link">
+            <Link to="/contact" className="link">
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

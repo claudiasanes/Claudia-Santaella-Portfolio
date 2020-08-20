@@ -1,9 +1,26 @@
 [
   {
-    "name": "Guess the Number",
-    "description": "",
+    "name": "Buscador de series",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
-    "url": "",
+    "url": "https://github.com/Adalab/Buscador-de-series",
+    "img": "../images/buscador-de-series.png"
+  },
+  {
+    "name": "Rick & Morty character searcher",
+    "tecnologies": ["React", "JavaScript", "CSS3", "HTML5"],
+    "url": "https://github.com/Adalab/Rick-Morty-character-search",
+    "img": "../images/rick-and-morty.png"
+  },
+  {
+    "name": "Guess the Number",
+    "tecnologies": ["JavaScript", "CSS3", "HTML5"],
+    "url": "https://github.com/Adalab/Guess-the-number",
+    "img": "../images/guess-the-number.jpg"
+  },
+  {
+    "name": "Pokedex",
+    "tecnologies": ["React", "JavaScript", "CSS3", "HTML5"],
+    "url": "https://github.com/claudiasanes/modulo-3-evaluacion-intermedia-claudiasanes",
     "img": ""
   }
 ]
