@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.scss';
 
-function Footer() {
+function Footer(props) {
   return (
     <div className="footer">
       <nav className="menu">
         <ul className="menu__list">
           <li className="menu__item">
-            <a className="link" href="aaa" alt="link">
+            <Link to="/projects" className="link">
               PROJECTS
-            </a>
+            </Link>
           </li>
           <li className="menu__item">
             <Link to="/cv" className="link">

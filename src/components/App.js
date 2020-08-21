@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import '../App.scss';
 import Character from './Character';
 import Footer from './Footer';
+import Projects from './Projects';
 import Cv from './Cv';
 import Contact from './Contact';
 import Header from './Header';
@@ -14,8 +15,6 @@ const ps = [
   'Señoras y señores del jurado, la prueba número uno es lo que los serafines, los mal informados e ingenuos serafines de majestuosas alas, envidiaron. Contemplen esta maraña de espinas.',
 ];
 function App() {
-  const [style, setStyle] = useState({});
-  const changeColor = (color) => setStyle({ backgroundColor: color });
   return (
     <div className="App">
       <Header />
@@ -24,20 +23,16 @@ function App() {
           {ps.map((paragraph, pindex) => (
             <p key={pindex} className="paragraph">
               {paragraph.split('').map((character, index) => (
-                <Character
-                  key={`${character}-${index}`}
-                  changeColor={changeColor}
-                >
-                  {character}
-                </Character>
+                <Character key={`${character}-${index}`}>{character}</Character>
               ))}
             </p>
           ))}
-          <div className="background" style={style}></div>
+          <div className="background"></div>
         </div>
       </Route>
       <Footer />
       <Switch>
+        <Route path="/projects" component={Projects} />
         <Route path="/cv" component={Cv} />
         <Route path="/contact" component={Contact} />
       </Switch>
