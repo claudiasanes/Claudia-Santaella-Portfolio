@@ -8,7 +8,12 @@ function Projects() {
 
   const projectsList = projects.map((project, index) => {
     const tecnologiesList = project.tecnologies.map((tecnology) => {
-      return <li key={project.id}>{tecnology}</li>;
+      return (
+        <li key={project.id} className="tecnology">
+          {' '}
+          <pre>{tecnology} | </pre>
+        </li>
+      );
     });
 
     // const setIsShown = (ev) => {
@@ -22,19 +27,23 @@ function Projects() {
     // };
 
     return (
-      <p className="projects" key={index}>
+      <p className="projects__name" key={index}>
         <span
           id={project.id}
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
         >
           {' '}
-          {project.name},{' '}
+          {project.name}{' '}
+          <ul className="tecnologies-list">
+            <sup>{tecnologiesList}</sup>
+          </ul>{' '}
         </span>
         {isShown && (
           <div>
-            <ul>{tecnologiesList}</ul>
-            <img key={project.id} src={project.img} alt={project.name} />
+            <div className="project-img__container">
+              <img key={project.id} src={project.img} alt={project.name} />
+            </div>
           </div>
         )}
       </p>

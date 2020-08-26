@@ -27,7 +27,6 @@ function App() {
               ))}
             </p>
           ))}
-          <div className="background"></div>
         </div>
       </Route>
       <Footer />

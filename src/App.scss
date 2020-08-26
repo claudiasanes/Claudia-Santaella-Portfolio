@@ -56,6 +56,8 @@
   color: black;
 }
 
+// CV
+
 .cv-container {
   width: 100vw;
   display: flex;
@@ -81,6 +83,8 @@
   box-shadow: 0 6px 16px 0px rgba(0, 0, 0, 0.205);
 }
 
+// CONTACT
+
 .contact {
   &__container {
     background-color: grey;
@@ -99,4 +103,44 @@
     &__item {
     }
   }
+}
+
+// PROJECTS
+
+.projects {
+  margin: 40px;
+
+  &__name {
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.project-img__container {
+  width: 600px;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.tecnologies-list {
+  display: inline-block;
+}
+
+.tecnology {
+  display: inline-block;
+  font-size: 16px;
 }
