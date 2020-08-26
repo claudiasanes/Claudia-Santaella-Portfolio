@@ -1,22 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../App.scss';
 
 function Contact() {
   return (
     <>
+      <div className="marquee-border">
+        <h2 className="marquee-title wrapper">contact contact contact </h2>
+      </div>
       <div className="contact__container">
-        <Link to="/" className="contact__return-btn">
-          <div className="return"> RETURN</div>
-        </Link>
-
         <ul className="contact__list">
-          <li className="contact__list__item">
+          <li className="contact__list__item wrapper">
             <a className="link" href="mailto:claudiasanes@gmial.com">
               Email
             </a>
           </li>
-          <li className="contact__list__item">
+          <li className="contact__list__item wrapper">
             <a
               className="link"
               href="https://github.com/claudiasanes"
@@ -26,7 +24,7 @@ function Contact() {
               GitHub
             </a>
           </li>
-          <li className="contact__list__item">
+          <li className="contact__list__item wrapper">
             <a
               className="link"
               href="https://www.linkedin.com/in/claudiasantaella/"
@@ -36,7 +34,7 @@ function Contact() {
               LinkedIn
             </a>
           </li>
-          <li className="contact__list__item">
+          <li className="contact__list__item wrapper">
             <a
               className="link"
               href="https://www.instagram.com/__santaella/"
@@ -46,7 +44,7 @@ function Contact() {
               Instagram
             </a>
           </li>
-          <li className="contact__list__item">
+          <li className="contact__list__item wrapper">
             <a
               className="link"
               href="https://twitter.com/__Santaella"
@@ -54,6 +52,16 @@ function Contact() {
               rel="noopener noreferrer"
             >
               Twitter
+            </a>
+          </li>
+          <li className="contact__list__item wrapper">
+            <a
+              className="link"
+              href="https://www.claudiasantaella.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Design&Illustration
             </a>
           </li>
         </ul>

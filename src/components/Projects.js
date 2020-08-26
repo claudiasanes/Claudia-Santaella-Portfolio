@@ -4,53 +4,32 @@ import ProjectsArray from '../services/Projects.json';
 
 function Projects() {
   const [projects, setProjects] = useState(ProjectsArray);
-  const [isShown, setIsShown] = useState(false);
 
   const projectsList = projects.map((project, index) => {
-    const tecnologiesList = project.tecnologies.map((tecnology) => {
-      return (
-        <li key={project.id} className="tecnology">
-          {' '}
-          <pre>{tecnology} | </pre>
-        </li>
-      );
-    });
-
-    // const setIsShown = (ev) => {
-    //   const target = ev.target;
-    //   return (
-    //     <div>
-    //       <ul>{tecnologiesList}</ul>
-    //       <img key={target.id} src={project.img} alt={project.name} />
-    //     </div>
-    //   );
-    // };
-
     return (
-      <p className="projects__name" key={index}>
-        <span
+      <li className="projects__name wrapper" key={index}>
+        <a
+          className="link"
           id={project.id}
-          onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={() => setIsShown(false)}
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {' '}
-          {project.name}{' '}
-          <ul className="tecnologies-list">
-            <sup>{tecnologiesList}</sup>
-          </ul>{' '}
-        </span>
-        {isShown && (
-          <div>
-            <div className="project-img__container">
-              <img key={project.id} src={project.img} alt={project.name} />
-            </div>
-          </div>
-        )}
-      </p>
+          {project.name}
+        </a>
+      </li>
     );
   });
 
-  return <div className="projects">{projectsList}</div>;
+  return (
+    <>
+      <div className="marquee-border">
+        {' '}
+        <h2 className="marquee-title wrapper">projects projects projects</h2>
+      </div>
+      <ul className="projects">{projectsList}</ul>
+    </>
+  );
 }
 
 export default Projects;

@@ -1,40 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../App.scss';
 
 function Footer(props) {
   return (
-    <div className="footer">
-      <nav className="menu">
-        <ul className="menu__list">
-          <li className="menu__item">
-            <Link to="/projects" className="link">
-              PROJECTS
-            </Link>
-          </li>
-          <li className="menu__item">
-            <Link to="/cv" className="link">
-              CV
-            </Link>
-          </li>
-          <li className="menu__item">
-            <a
-              className="link"
-              href="https://www.claudiasantaella.com/"
-              alt="designer web"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              DESIGN & ILLUSTRATION
-            </a>
-          </li>
-          <li className="menu__item">
-            <Link to="/contact" className="link">
-              CONTACT
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <div className="footer wrapper">
       <div className="copyright">
         <span className="copyright__text">Made by Claudiasanes. 2020</span>
       </div>
