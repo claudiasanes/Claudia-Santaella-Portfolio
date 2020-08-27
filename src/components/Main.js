@@ -3,21 +3,18 @@ import Character from './Character';
 import Footer from './Footer';
 
 const ps = [
-  'I’m a curious brand and product designer with +6 years of experience in creative and technological projects',
-  'Most of my work moves among intersection of Branding, Product Design, Technology & Culture. I truly believe in new media and code as much as typography, editorial and product design.',
-  'Throughout the last few years, I’ve worked on the fascinating fields of mobility, telecommunications services, fashion, and journalism.',
-  'I love meeting new people and sharing all kind of stories. Do you wanna have a chat? hi@rafagarces.com',
+  'Hey! I’m Claudia Santaella, a curious graphic designer who turned into front-end developer, I have +3 years of experience in creative and technological projects',
+  'I’ve mainly worked as a graphic designer and an illustrator. Recetly I’ve done a front-end developer bootcamp at Adalab. I truly believe in helping people lead more fulfilling lives throught design and front-end development, understanding their needs and bulding strategy',
+  'I love meeting new people and I’m available for hire or colaborations, don’t be afraid to say hello.',
 ];
 
-function Main() {
+function Main(props) {
   return (
-    <div className="main">
+    <>
       <div className="header header-left">
-        <div className="wrapper">
-          <h1 className="header__title">Claudia Santaella</h1>
-        </div>
+        <h1 className="header__title">Claudia Santaella</h1>
       </div>
-      <div className="wrapper">
+      <div className="main wrapper">
         {ps.map((paragraph, pindex) => (
           <p key={pindex} className="paragraph">
             {paragraph.split('').map((character, index) => (
@@ -25,9 +22,15 @@ function Main() {
             ))}
           </p>
         ))}
+        <div className="cv-btn">
+          <a href={props.cv} download>
+            download CV
+          </a>
+        </div>
       </div>
+
       <Footer />
-    </div>
+    </>
   );
 }
 

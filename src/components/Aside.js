@@ -6,11 +6,8 @@ function Aside() {
   return (
     <aside className="aside">
       <div className="header header-right">
-        <div className="wrapper">
-          <h1 className="header__title">menu</h1>
-        </div>
+        <h1 className="header__title">menu</h1>
       </div>
-
       <Projects />
       <Contact />
     </aside>

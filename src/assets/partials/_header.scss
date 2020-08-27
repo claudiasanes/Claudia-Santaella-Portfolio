@@ -1,0 +1,20 @@
+.header {
+  border-bottom: 2px solid black;
+  padding: 0 40px;
+  height: 80px;
+  width: 50vw;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
+
+  &__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.header-left {
+  border-right: 2px solid black;
+}

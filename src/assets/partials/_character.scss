@@ -1,0 +1,8 @@
+.character {
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  transition: color 4s ease, top 4s ease, left 4s ease;
+  top: 0;
+  left: 0;
+}

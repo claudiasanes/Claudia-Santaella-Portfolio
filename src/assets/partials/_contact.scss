@@ -1,0 +1,13 @@
+.contact {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__item {
+      font-size: 32px;
+      color: black;
+      border-bottom: 2px solid black;
+    }
+  }
+}

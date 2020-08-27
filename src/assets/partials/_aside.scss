@@ -1,0 +1,28 @@
+.aside {
+  width: 50vw;
+  top: 88px;
+  overflow: scroll;
+  padding-top: 88px;
+  scroll-behavior: smooth;
+}
+
+.marquee-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: blue;
+  text-transform: uppercase;
+  overflow-y: hidden;
+  animation: marquee 5s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.marquee-border {
+  border-bottom: 2px solid black;
+}

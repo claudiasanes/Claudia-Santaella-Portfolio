@@ -5,13 +5,14 @@ function Contact() {
   return (
     <>
       <div className="marquee-border">
-        <h2 className="marquee-title wrapper">contact contact contact </h2>
+        <h2 className="marquee-title wrapper">contact </h2>
       </div>
       <div className="contact__container">
         <ul className="contact__list">
           <li className="contact__list__item wrapper">
             <a className="link" href="mailto:claudiasanes@gmial.com">
-              Email
+              <span>Email</span>
+              <i class="fas fa-arrow-right"></i>
             </a>
           </li>
           <li className="contact__list__item wrapper">
@@ -21,7 +22,8 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub
+              <span>GitHub</span>
+              <i class="fas fa-arrow-right"></i>
             </a>
           </li>
           <li className="contact__list__item wrapper">
@@ -31,27 +33,8 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
-            </a>
-          </li>
-          <li className="contact__list__item wrapper">
-            <a
-              className="link"
-              href="https://www.instagram.com/__santaella/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-          </li>
-          <li className="contact__list__item wrapper">
-            <a
-              className="link"
-              href="https://twitter.com/__Santaella"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
+              <span>LinkedIn</span>
+              <i class="fas fa-arrow-right"></i>
             </a>
           </li>
           <li className="contact__list__item wrapper">
@@ -61,7 +44,30 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Design&Illustration
+              <span>Design&Illustration</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </li>
+          <li className="contact__list__item wrapper">
+            <a
+              className="link"
+              href="https://www.instagram.com/__santaella/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Instagram</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </li>
+          <li className="contact__list__item wrapper">
+            <a
+              className="link"
+              href="https://twitter.com/__Santaella"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Twitter</span>
+              <i class="fas fa-arrow-right"></i>
             </a>
           </li>
         </ul>
