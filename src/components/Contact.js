@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
       <div className="marquee-border">
-        <h2 className="marquee-title wrapper">contact </h2>
+        <h2 className="marquee-title wrapper">contact contact contact </h2>
       </div>
       <div className="contact__container">
         <ul className="contact__list">

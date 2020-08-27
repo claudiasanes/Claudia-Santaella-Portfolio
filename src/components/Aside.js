@@ -8,8 +8,8 @@ function Aside() {
       <div className="header header-right">
         <h1 className="header__title">menu</h1>
       </div>
-      <Projects />
       <Contact />
+      <Projects />
     </aside>
   );
 }

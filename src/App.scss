@@ -8,6 +8,14 @@
 @import './assets/partials/_projects';
 @import './assets/partials/_header';
 
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('./fonts/SpaceMono/SpaceMono-Bold.ttf');
+  src: url('./fonts/SpaceMono/SpaceMono-BoldItalic.ttf');
+  src: url('./fonts/SpaceMono/SpaceMono-Italic.ttf');
+  src: url('./fonts/SpaceMono/SpaceMono-Regular.ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +24,7 @@
 
 body {
   height: 100%;
+  font-family: SpaceMono;
 }
 
 .wrapper {

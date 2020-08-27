@@ -7,19 +7,22 @@
 }
 
 .marquee-title {
+  width: 100%;
   font-size: 32px;
   font-weight: bold;
+  text-align: right;
   color: blue;
   text-transform: uppercase;
-  overflow-y: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
   animation: marquee 5s linear infinite;
 }
 @keyframes marquee {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(100%);
   }
   100% {
-    transform: translate(-100%, 0);
   }
 }
 

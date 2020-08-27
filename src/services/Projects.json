@@ -11,18 +11,45 @@
     "name": "Rick & Morty character searcher",
     "tecnologies": ["React", "JavaScript", "CSS3", "HTML5"],
     "url": "http://beta.adalab.es/modulo-3-evaluacion-final-claudiasanes/",
-
     "img": "../images/rick-and-morty.png"
   },
   {
     "id": 3,
+    "name": "Patatp Clone",
+    "tecnologies": ["JavaScript", "CSS3", "HTML5"],
+    "url": "https://claudiasanes.github.io/Patatap-clone/",
+    "img": "../images/rick-and-morty.png"
+  },
+  {
+    "id": 4,
     "name": "Guess the Number",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
     "url": "http://beta.adalab.es/modulo-2-evaluacion-intermedia-claudiasanes/",
     "img": "../images/guess-the-number.jpg"
   },
   {
-    "id": 4,
+    "id": 5,
+    "name": "Drum Kit",
+    "tecnologies": ["JavaScript", "CSS3", "HTML5"],
+    "url": "https://claudiasanes.github.io/Drum-Kit/",
+    "img": "../images/rick-and-morty.png"
+  },
+  {
+    "id": 6,
+    "name": "Canvas",
+    "tecnologies": ["JavaScript", "CSS3", "HTML5"],
+    "url": "https://claudiasanes.github.io/HTML5-Canvas/",
+    "img": "../images/rick-and-morty.png"
+  },
+  {
+    "id": 7,
+    "name": "JavaScript Clock",
+    "tecnologies": ["JavaScript", "CSS3", "HTML5"],
+    "url": "https://claudiasanes.github.io/JS-clock/",
+    "img": "../images/rick-and-morty.png"
+  },
+  {
+    "id": 8,
     "name": "Pokedex",
     "tecnologies": ["React", "JavaScript", "CSS3", "HTML5"],
     "url": "https://beta.adalab.es/modulo-3-evaluacion-intermedia-claudiasanes/",

@@ -25,7 +25,7 @@ function Projects() {
     <>
       <div className="marquee-border">
         {' '}
-        <h2 className="marquee-title wrapper">projects</h2>
+        <h2 className="marquee-title wrapper">projects projects projects</h2>
       </div>
       <ul className="projects">{projectsList}</ul>
     </>
