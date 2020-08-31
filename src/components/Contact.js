@@ -44,7 +44,7 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Design&Illustration</span>
+              <span>Design & Illustration</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </li>

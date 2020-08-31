@@ -7,10 +7,14 @@
 }
 
 .link {
-  font-size: 32px;
+  font-size: 16px;
   color: black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @include tablet {
+    font-size: 32px;
+  }
 }
 
 .fa-arrow-right {

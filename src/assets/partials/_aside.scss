@@ -1,9 +1,15 @@
 .aside {
-  width: 50vw;
-  top: 88px;
-  overflow: scroll;
-  padding-top: 88px;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 64px;
   scroll-behavior: smooth;
+  @include tablet {
+    max-width: 50vw;
+    top: 88px;
+    padding-top: 88px;
+    margin-bottom: 0px;
+  }
 }
 
 .marquee-title {
@@ -23,9 +29,15 @@
     transform: translateX(100%);
   }
   100% {
+    transform: translateX(-100%);
   }
 }
 
 .marquee-border {
+  background-color: white;
   border-bottom: 2px solid black;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,12 +1,15 @@
 .footer {
   border-top: 2px solid black;
-  border-right: 2px solid black;
-  width: 50vw;
-  position: fixed;
+
   font-size: 12px;
   line-height: 12px;
-  bottom: 0px;
-  top: auto;
   background-color: white;
   text-transform: uppercase;
+  @include tablet {
+    position: fixed;
+    bottom: 0px;
+    top: auto;
+    width: 50vw;
+    border-right: 2px solid black;
+  }
 }
