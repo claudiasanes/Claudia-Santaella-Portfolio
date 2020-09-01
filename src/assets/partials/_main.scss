@@ -1,8 +1,8 @@
 .main {
   width: 100vw;
-  overflow-y: scroll;
   overflow-x: hidden;
   @include tablet {
+    overflow-y: scroll;
     width: 50vw;
     border-right: 2px solid black;
   }
@@ -34,12 +34,33 @@
   }
 }
 
-.menu-hamburguer {
-  background-color: transparent;
-  color: black;
-  border: none;
-  outline: none;
+.burguer {
   @include tablet {
     display: none;
   }
+}
+
+.burguer div {
+  background-color: black;
+  width: 20px;
+  height: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.4s ease-out;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-7px, 7px);
+  transition: transform 0.5s ease-in;
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -7px);
+  transition: transform 0.5s ease-in;
 }

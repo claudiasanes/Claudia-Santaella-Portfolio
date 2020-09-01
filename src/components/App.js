@@ -4,23 +4,63 @@ import Main from './Main';
 import Curriculum from '../images/ClaudiaSantaellaCV.jpg';
 import Aside from './Aside';
 
-function App() {
-  const handleCollapsable = (targetedCollapsableId) => {
-    if (targetedCollapsableId !== this.state.activePanel) {
-      this.setState({ activePanel: targetedCollapsableId });
-    } else {
-      this.setState({ activePanel: '' });
-    }
+class App extends React.Component {
+  state = {
+    isMenuOpen: false,
+    isActive: false,
   };
 
-  return (
-    <div className="App">
-      <div className="columns-container">
-        <Main cv={Curriculum} />
-        <Aside />
+  handleToggleMenu = () => {
+    this.setState((prevState) => {
+      return { isMenuOPen: !prevState.isMenuOPen };
+    });
+  };
+
+  toggleButton = () => {
+    this.setState({
+      isActive: !this.state.isActive,
+    });
+    // this.setState((prevState) => {
+    //   return { isActive: !prevState.isActive };
+    // });
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <div className="columns-container">
+          <Main
+            cv={Curriculum}
+            handleClickMenu={this.handleToggleMenu}
+            isActive={this.state.isActive}
+            toggleButton={this.toggleButton}
+          />
+          <Aside show={this.state.isMenuOPen} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
+
+// function App() {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//   const handleCollapsable = () => {
+//     if (isMenuOpen !== false) {
+//       setIsMenuOpen(true);
+//     } else {
+//       setIsMenuOpen(true);
+//     }
+//   };
+
+//   return (
+//     <div className="App">
+//       <div className="columns-container">
+//         <Main cv={Curriculum} />
+//         <Aside />
+//       </div>
+//     </div>
+//   );
+// }
 
 export default App;

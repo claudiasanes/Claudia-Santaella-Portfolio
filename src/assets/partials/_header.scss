@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   padding: 0 40px;
   text-transform: uppercase;
   border-bottom: 2px solid black;
@@ -10,7 +10,7 @@
     position: fixed;
     top: 0px;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
   }
 
   &__title {
@@ -34,6 +34,12 @@
   display: none;
 
   @include tablet {
+    position: fixed;
+    right: 0px;
+    left: auto;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }

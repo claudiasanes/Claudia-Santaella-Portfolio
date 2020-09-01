@@ -28,7 +28,10 @@ body {
 }
 
 .wrapper {
-  padding: 20px 40px;
+  padding: 16px 20px;
+  @include tablet {
+    padding: 20px 40px;
+  }
 }
 
 .columns-container {

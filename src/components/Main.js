@@ -9,14 +9,27 @@ const ps = [
 ];
 
 function Main(props) {
+  const handleClick = () => {
+    props.handleClickMenu();
+    props.toggleButton();
+  };
+
+  let toggleBurger = 'burguer';
+  if (props.isActive) {
+    toggleBurger = 'burguer toggle';
+  }
+
   return (
     <>
       <div className="header header-left">
         <h1 className="header__title">Claudia Santaella</h1>
         <div>
-          <button className="menu-hamburguer">
-            <i className="fas fa-bars"></i>
-          </button>
+          <div className={toggleBurger} onClick={handleClick}>
+            {/* <i className="fas fa-bars"></i> */}
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </div>
       <div className="main wrapper">
