@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "87749786cc888fc42e7448e602e86998",
+    "revision": "0cba976d89a163c116e694d0f375ffa9",
     "url": "./index.html"
   },
   {
-    "revision": "5f9176f19794fe58dd67",
-    "url": "./static/css/main.a5918c0e.chunk.css"
+    "revision": "af2c22d3f0554f67f399",
+    "url": "./static/css/main.9bb243c8.chunk.css"
   },
   {
     "revision": "2ab7023093086ba92370",
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/js/2.49444592.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f9176f19794fe58dd67",
-    "url": "./static/js/main.7e3b911f.chunk.js"
+    "revision": "af2c22d3f0554f67f399",
+    "url": "./static/js/main.ca5f6821.chunk.js"
   },
   {
     "revision": "a0e6f4cee20c0c79b2e6",
     "url": "./static/js/runtime-main.8bb1f59a.js"
   },
   {
-    "revision": "98524dd035482468f9f7d1373b9477db",
-    "url": "./static/media/ClaudiaSantaellaCV.98524dd0.jpg"
+    "revision": "ad04adb94be5324452f7a5bb73a32f8f",
+    "url": "./static/media/ClaudiaSantaellaCV.ad04adb9.jpg"
   },
   {
     "revision": "6202525e930e9cd86a3b6d6d17c8b914",
