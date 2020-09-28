@@ -11,7 +11,7 @@ function Contact() {
       <div className="contact__container">
         <ul className="contact__list">
           <li className="contact__list__item wrapper">
-            <a className="link" href="mailto:claudiasanes@gmial.com">
+            <a className="link" href="mailto:claudiasanes@gmail.com">
               <span>Email</span>
               <i className="fas fa-arrow-right"></i>
             </a>
