@@ -4,7 +4,7 @@
     "name": "Buscador de series",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
     "url": "http://beta.adalab.es/modulo-2-evaluacion-final-claudiasanes/",
-    "img": "./images/buscador-de-series.png"
+    "img": "../../public/images/buscador-de-series.png"
   },
   {
     "id": 2,
