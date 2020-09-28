@@ -15,10 +15,10 @@
   },
   {
     "id": 3,
-    "name": "Patatp Clone",
+    "name": "Patatap Clone",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
     "url": "https://claudiasanes.github.io/Patatap-clone/",
-    "img": "../images/rick-and-morty.png"
+    "img": "../images/patatap-clone.png"
   },
   {
     "id": 4,
@@ -32,21 +32,21 @@
     "name": "Drum Kit",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
     "url": "https://claudiasanes.github.io/Drum-Kit/",
-    "img": "../images/rick-and-morty.png"
+    "img": "../images/drum-kit.png"
   },
   {
     "id": 6,
     "name": "Canvas",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
     "url": "https://claudiasanes.github.io/HTML5-Canvas/",
-    "img": "../images/rick-and-morty.png"
+    "img": "../images/canvas.png"
   },
   {
     "id": 7,
     "name": "JavaScript Clock",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
     "url": "https://claudiasanes.github.io/JS-clock/",
-    "img": "../images/rick-and-morty.png"
+    "img": "../images/js-clock.png"
   },
   {
     "id": 8,

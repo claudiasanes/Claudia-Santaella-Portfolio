@@ -3,11 +3,18 @@ import '../App.scss';
 import ProjectsArray from '../services/Projects.json';
 
 function Projects() {
-  const [projects, setProjects] = useState(ProjectsArray);
+  const [projects] = useState(ProjectsArray);
+
+  const [isShown, setIsShown] = useState(0);
 
   const projectsList = projects.map((project, index) => {
     return (
-      <li className="projects__name wrapper" key={index}>
+      <li
+        className="projects__name wrapper"
+        key={index}
+        onMouseEnter={() => setIsShown(project.id)}
+        onMouseLeave={() => setIsShown(0)}
+      >
         <a
           className="link"
           id={project.id}
@@ -15,8 +22,14 @@ function Projects() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>{project.name}</span> <i class="fas fa-arrow-right"></i>
+          <span>{project.name}</span> <i className="fas fa-arrow-right"></i>
         </a>
+
+        {isShown === project.id && (
+          <div className="img-container">
+            <img className="project-img" src={project.img} alt={project.name} />
+          </div>
+        )}
       </li>
     );
   });
@@ -26,6 +39,7 @@ function Projects() {
       <div className="marquee-border">
         {' '}
         <h2 className="marquee-title wrapper">projects projects projects</h2>
+        {/* <h2 className="marquee-title wrapper">projects projects projects</h2> */}
       </div>
       <ul className="projects">{projectsList}</ul>
     </>

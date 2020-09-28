@@ -26,15 +26,17 @@ function Character({ children }) {
   };
 
   return (
-    <div
-      onMouseEnter={() => onMouseEnter(children)}
-      onFocus={() => onMouseEnter(children)}
-      style={style}
-      className="character"
-      tabIndex="0"
-    >
-      {children}
-    </div>
+    <>
+      <div
+        onMouseEnter={() => onMouseEnter(children)}
+        onFocus={() => onMouseEnter(children)}
+        style={style}
+        className="character"
+        tabIndex="0"
+      >
+        {children}
+      </div>
+    </>
   );
 }
 

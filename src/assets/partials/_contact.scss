@@ -12,6 +12,9 @@
       @include tablet {
         font-size: 32px;
       }
+      & span:hover {
+        color: #463fd5;
+      }
     }
   }
 }

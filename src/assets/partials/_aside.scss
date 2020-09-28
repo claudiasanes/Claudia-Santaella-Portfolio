@@ -30,22 +30,26 @@
   transform: translateX(0);
 }
 
+.marquee-border {
+  white-space: pre;
+}
+
 .marquee-title {
-  display: inline-block;
-  width: 100vw;
+  display: inline-flex;
+  width: auto;
   font-size: 32px;
   font-weight: bold;
   text-align: right;
-  color: blue;
+  color: #463fd5;
   text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
-  position: relative;
+  // position: relative;
   animation: marquee 5s linear infinite;
 }
 @keyframes marquee {
   0% {
-    transform: translateX(50%);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);

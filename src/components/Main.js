@@ -26,9 +26,9 @@ function Main(props) {
         <div>
           <div className={toggleBurger} onClick={handleClick}>
             {/* <i className="fas fa-bars"></i> */}
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
           </div>
         </div>
       </div>
