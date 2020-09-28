@@ -45,24 +45,18 @@
   overflow: hidden;
   white-space: nowrap;
   // position: relative;
-  animation: marquee 5s linear infinite;
+  span {
+    white-space: pre;
+    animation: marquee 5s linear infinite;
+  }
 }
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
-  // 0% {
-  //   transform: translateX(0%);
-  // }
-  // 50% {
-  //   transform: translateX(-50%);
-  // }
-  // 100% {
-  //   transform: translateX(0%);
-  // }
 }
 
 .marquee-border {

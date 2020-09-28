@@ -5,7 +5,10 @@ function Contact() {
   return (
     <>
       <div className="marquee-border">
-        <span className="marquee-title wrapper">contact contact contact </span>
+        <span className="marquee-title wrapper">
+          <span>contact contact contact contact contact contact contact contact contact </span>
+          <span>contact contact contact contact contact contact contact contact contact </span>
+        </span>
         {/* <span className="marquee-title wrapper">contact contact contact </span> */}
       </div>
       <div className="contact__container">
