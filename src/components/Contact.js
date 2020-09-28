@@ -1,15 +1,12 @@
 import React from 'react';
 import '../App.scss';
+import Marquee from './Marquee';
 
 function Contact() {
   return (
     <>
       <div className="marquee-border">
-        <span className="marquee-title wrapper">
-          <span>contact contact contact contact contact contact contact contact contact </span>
-          <span>contact contact contact contact contact contact contact contact contact </span>
-        </span>
-        {/* <span className="marquee-title wrapper">contact contact contact </span> */}
+          <Marquee content="contact"/>
       </div>
       <div className="contact__container">
         <ul className="contact__list">
