@@ -16,6 +16,9 @@
   @include tablet {
     font-size: 32px;
   }
+  & :hover {
+    color: #463fd5;
+  }
 }
 
 .fa-arrow-right {

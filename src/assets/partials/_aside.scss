@@ -32,6 +32,10 @@
 
 .marquee-border {
   white-space: pre;
+  padding: 16px 0px;
+  @include tablet {
+    padding: 20px 0px;
+  }
 }
 
 .marquee-title {
