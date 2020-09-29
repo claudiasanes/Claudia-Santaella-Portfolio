@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../App.scss';
+import Marquee from './Marquee';
 import ProjectsArray from '../services/Projects.json';
 
 function Projects() {
@@ -37,9 +38,7 @@ function Projects() {
   return (
     <>
       <div className="marquee-border">
-        {' '}
-        <h2 className="marquee-title wrapper">projects projects projects</h2>
-        {/* <h2 className="marquee-title wrapper">projects projects projects</h2> */}
+        <Marquee content="projects"/>
       </div>
       <ul className="projects">{projectsList}</ul>
     </>
