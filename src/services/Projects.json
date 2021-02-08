@@ -3,14 +3,14 @@
     "id": 1,
     "name": "Buscador de series",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
-    "url": "http://beta.adalab.es/modulo-2-evaluacion-final-claudiasanes/",
+    "url": "https://claudiasanes.github.io/Buscador-de-series/",
     "img": "./images/buscador-de-series.png"
   },
   {
     "id": 2,
     "name": "Rick & Morty character searcher",
     "tecnologies": ["React", "JavaScript", "CSS3", "HTML5"],
-    "url": "http://beta.adalab.es/modulo-3-evaluacion-final-claudiasanes/",
+    "url": "https://claudiasanes.github.io/Rick-Morty-character-search/#/",
     "img": "./images/rick-and-morty.png"
   },
   {
@@ -24,7 +24,7 @@
     "id": 4,
     "name": "Guess the Number",
     "tecnologies": ["JavaScript", "CSS3", "HTML5"],
-    "url": "http://beta.adalab.es/modulo-2-evaluacion-intermedia-claudiasanes/",
+    "url": "https://claudiasanes.github.io/Guess-the-number/",
     "img": "./images/guess-the-number.jpg"
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "name": "Pokedex",
     "tecnologies": ["React", "JavaScript", "CSS3", "HTML5"],
-    "url": "https://beta.adalab.es/modulo-3-evaluacion-intermedia-claudiasanes/",
+    "url": "https://claudiasanes.github.io/Pokedex/",
     "img": "./images/pokedex.png"
   }
 ]
